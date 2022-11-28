@@ -16,6 +16,7 @@ struct LandingView: View {
     var body: some View {
         if shouldShowTest {
             QuestionsView()
+                .environmentObject(QuestionsViewModel())
         } else {
             VStack(spacing: 12.0) {
                 Spacer()

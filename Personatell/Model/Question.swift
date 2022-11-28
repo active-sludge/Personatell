@@ -11,7 +11,7 @@ struct Question {
     let title: String
     let answers: [Answer]
     
-    static func mock() -> [Question] {
+    static func mockQuestions() -> [Question] {
         return [
             Question(title: "You’re really busy at work and a colleague is telling you their life story and personal woes. You:",
                      answers: [
@@ -49,6 +49,16 @@ struct Question {
                         Answer(title: "Always drag the conversation back to themselves"),
                      ]),
         ]
+    }
+    
+    static func mockQuestion() -> Question {
+        return Question(title: "You’re really busy at work and a colleague is telling you their life story and personal woes. You:",
+                        answers: [
+                            Answer(title: "Don’t dare to interrupt them"),
+                            Answer(title: "Think it’s more important to give them some of your time; work can wait"),
+                            Answer(title: "Listen, but with only with half an ear"),
+                            Answer(title: "Interrupt and explain that you are really busy at the moment")
+                        ])
     }
 }
 

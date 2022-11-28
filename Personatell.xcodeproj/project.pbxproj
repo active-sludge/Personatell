@@ -19,6 +19,7 @@
 		89EBEDB629349A2C00053BDA /* LandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBEDB529349A2C00053BDA /* LandingViewModel.swift */; };
 		89EBEDB82934C8F700053BDA /* QuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBEDB72934C8F700053BDA /* QuestionsView.swift */; };
 		89EBEDBA2934C8FF00053BDA /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBEDB92934C8FF00053BDA /* ResultView.swift */; };
+		89FDD8A02935403B004D9B01 /* QuestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FDD89F2935403B004D9B01 /* QuestionsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		89EBEDB529349A2C00053BDA /* LandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewModel.swift; sourceTree = "<group>"; };
 		89EBEDB72934C8F700053BDA /* QuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsView.swift; sourceTree = "<group>"; };
 		89EBEDB92934C8FF00053BDA /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		89FDD89F2935403B004D9B01 /* QuestionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				89EBEDB72934C8F700053BDA /* QuestionsView.swift */,
+				89FDD89F2935403B004D9B01 /* QuestionsViewModel.swift */,
 			);
 			path = Questions;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 			files = (
 				89EBEDB429349A2400053BDA /* LandingView.swift in Sources */,
 				89EBEDB629349A2C00053BDA /* LandingViewModel.swift in Sources */,
+				89FDD8A02935403B004D9B01 /* QuestionsViewModel.swift in Sources */,
 				89EBEDB82934C8F700053BDA /* QuestionsView.swift in Sources */,
 				89EBEDAE2934969600053BDA /* Question.swift in Sources */,
 				89EBED85293495FC00053BDA /* ContentView.swift in Sources */,
