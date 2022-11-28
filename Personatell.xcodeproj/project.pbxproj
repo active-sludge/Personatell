@@ -14,6 +14,7 @@
 		89EBED94293495FF00053BDA /* PersonatellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBED93293495FF00053BDA /* PersonatellTests.swift */; };
 		89EBED9E293495FF00053BDA /* PersonatellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBED9D293495FF00053BDA /* PersonatellUITests.swift */; };
 		89EBEDA0293495FF00053BDA /* PersonatellUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBED9F293495FF00053BDA /* PersonatellUITestsLaunchTests.swift */; };
+		89EBEDAE2934969600053BDA /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBEDAD2934969600053BDA /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		89EBED99293495FF00053BDA /* PersonatellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonatellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89EBED9D293495FF00053BDA /* PersonatellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonatellUITests.swift; sourceTree = "<group>"; };
 		89EBED9F293495FF00053BDA /* PersonatellUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonatellUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		89EBEDAD2934969600053BDA /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,8 @@
 		89EBED81293495FC00053BDA /* Personatell */ = {
 			isa = PBXGroup;
 			children = (
+				89EBEDAF2934994E00053BDA /* Scenes */,
+				89EBEDAC2934968C00053BDA /* Model */,
 				89EBED82293495FC00053BDA /* PersonatellApp.swift */,
 				89EBED84293495FC00053BDA /* ContentView.swift */,
 				89EBED86293495FE00053BDA /* Assets.xcassets */,
@@ -125,6 +129,45 @@
 				89EBED9F293495FF00053BDA /* PersonatellUITestsLaunchTests.swift */,
 			);
 			path = PersonatellUITests;
+			sourceTree = "<group>";
+		};
+		89EBEDAC2934968C00053BDA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				89EBEDAD2934969600053BDA /* Question.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		89EBEDAF2934994E00053BDA /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				89EBEDB22934996A00053BDA /* Result */,
+				89EBEDB12934996000053BDA /* Questions */,
+				89EBEDB02934995400053BDA /* Landing */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		89EBEDB02934995400053BDA /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		89EBEDB12934996000053BDA /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Questions;
+			sourceTree = "<group>";
+		};
+		89EBEDB22934996A00053BDA /* Result */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Result;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89EBEDAE2934969600053BDA /* Question.swift in Sources */,
 				89EBED85293495FC00053BDA /* ContentView.swift in Sources */,
 				89EBED83293495FC00053BDA /* PersonatellApp.swift in Sources */,
 			);
