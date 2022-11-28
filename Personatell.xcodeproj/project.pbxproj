@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89EBED83293495FC00053BDA /* PersonatellApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBED82293495FC00053BDA /* PersonatellApp.swift */; };
+		89EBED85293495FC00053BDA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBED84293495FC00053BDA /* ContentView.swift */; };
+		89EBED87293495FE00053BDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89EBED86293495FE00053BDA /* Assets.xcassets */; };
+		89EBED8A293495FE00053BDA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89EBED89293495FE00053BDA /* Preview Assets.xcassets */; };
+		89EBED94293495FF00053BDA /* PersonatellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBED93293495FF00053BDA /* PersonatellTests.swift */; };
+		89EBED9E293495FF00053BDA /* PersonatellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBED9D293495FF00053BDA /* PersonatellUITests.swift */; };
+		89EBEDA0293495FF00053BDA /* PersonatellUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBED9F293495FF00053BDA /* PersonatellUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		89EBED90293495FF00053BDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89EBED77293495FC00053BDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89EBED7E293495FC00053BDA;
+			remoteInfo = Personatell;
+		};
+		89EBED9A293495FF00053BDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89EBED77293495FC00053BDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89EBED7E293495FC00053BDA;
+			remoteInfo = Personatell;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		89EBED7F293495FC00053BDA /* Personatell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Personatell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89EBED82293495FC00053BDA /* PersonatellApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonatellApp.swift; sourceTree = "<group>"; };
+		89EBED84293495FC00053BDA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		89EBED86293495FE00053BDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		89EBED89293495FE00053BDA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		89EBED8F293495FF00053BDA /* PersonatellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonatellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89EBED93293495FF00053BDA /* PersonatellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonatellTests.swift; sourceTree = "<group>"; };
+		89EBED99293495FF00053BDA /* PersonatellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonatellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89EBED9D293495FF00053BDA /* PersonatellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonatellUITests.swift; sourceTree = "<group>"; };
+		89EBED9F293495FF00053BDA /* PersonatellUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonatellUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89EBED7C293495FC00053BDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89EBED8C293495FF00053BDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89EBED96293495FF00053BDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		89EBED76293495FC00053BDA = {
+			isa = PBXGroup;
+			children = (
+				89EBED81293495FC00053BDA /* Personatell */,
+				89EBED92293495FF00053BDA /* PersonatellTests */,
+				89EBED9C293495FF00053BDA /* PersonatellUITests */,
+				89EBED80293495FC00053BDA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		89EBED80293495FC00053BDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89EBED7F293495FC00053BDA /* Personatell.app */,
+				89EBED8F293495FF00053BDA /* PersonatellTests.xctest */,
+				89EBED99293495FF00053BDA /* PersonatellUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89EBED81293495FC00053BDA /* Personatell */ = {
+			isa = PBXGroup;
+			children = (
+				89EBED82293495FC00053BDA /* PersonatellApp.swift */,
+				89EBED84293495FC00053BDA /* ContentView.swift */,
+				89EBED86293495FE00053BDA /* Assets.xcassets */,
+				89EBED88293495FE00053BDA /* Preview Content */,
+			);
+			path = Personatell;
+			sourceTree = "<group>";
+		};
+		89EBED88293495FE00053BDA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				89EBED89293495FE00053BDA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		89EBED92293495FF00053BDA /* PersonatellTests */ = {
+			isa = PBXGroup;
+			children = (
+				89EBED93293495FF00053BDA /* PersonatellTests.swift */,
+			);
+			path = PersonatellTests;
+			sourceTree = "<group>";
+		};
+		89EBED9C293495FF00053BDA /* PersonatellUITests */ = {
+			isa = PBXGroup;
+			children = (
+				89EBED9D293495FF00053BDA /* PersonatellUITests.swift */,
+				89EBED9F293495FF00053BDA /* PersonatellUITestsLaunchTests.swift */,
+			);
+			path = PersonatellUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89EBED7E293495FC00053BDA /* Personatell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89EBEDA3293495FF00053BDA /* Build configuration list for PBXNativeTarget "Personatell" */;
+			buildPhases = (
+				89EBED7B293495FC00053BDA /* Sources */,
+				89EBED7C293495FC00053BDA /* Frameworks */,
+				89EBED7D293495FC00053BDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Personatell;
+			productName = Personatell;
+			productReference = 89EBED7F293495FC00053BDA /* Personatell.app */;
+			productType = "com.apple.product-type.application";
+		};
+		89EBED8E293495FF00053BDA /* PersonatellTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89EBEDA6293495FF00053BDA /* Build configuration list for PBXNativeTarget "PersonatellTests" */;
+			buildPhases = (
+				89EBED8B293495FF00053BDA /* Sources */,
+				89EBED8C293495FF00053BDA /* Frameworks */,
+				89EBED8D293495FF00053BDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89EBED91293495FF00053BDA /* PBXTargetDependency */,
+			);
+			name = PersonatellTests;
+			productName = PersonatellTests;
+			productReference = 89EBED8F293495FF00053BDA /* PersonatellTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		89EBED98293495FF00053BDA /* PersonatellUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89EBEDA9293495FF00053BDA /* Build configuration list for PBXNativeTarget "PersonatellUITests" */;
+			buildPhases = (
+				89EBED95293495FF00053BDA /* Sources */,
+				89EBED96293495FF00053BDA /* Frameworks */,
+				89EBED97293495FF00053BDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89EBED9B293495FF00053BDA /* PBXTargetDependency */,
+			);
+			name = PersonatellUITests;
+			productName = PersonatellUITests;
+			productReference = 89EBED99293495FF00053BDA /* PersonatellUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89EBED77293495FC00053BDA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					89EBED7E293495FC00053BDA = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					89EBED8E293495FF00053BDA = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 89EBED7E293495FC00053BDA;
+					};
+					89EBED98293495FF00053BDA = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 89EBED7E293495FC00053BDA;
+					};
+				};
+			};
+			buildConfigurationList = 89EBED7A293495FC00053BDA /* Build configuration list for PBXProject "Personatell" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 89EBED76293495FC00053BDA;
+			productRefGroup = 89EBED80293495FC00053BDA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89EBED7E293495FC00053BDA /* Personatell */,
+				89EBED8E293495FF00053BDA /* PersonatellTests */,
+				89EBED98293495FF00053BDA /* PersonatellUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89EBED7D293495FC00053BDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89EBED8A293495FE00053BDA /* Preview Assets.xcassets in Resources */,
+				89EBED87293495FE00053BDA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89EBED8D293495FF00053BDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89EBED97293495FF00053BDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89EBED7B293495FC00053BDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89EBED85293495FC00053BDA /* ContentView.swift in Sources */,
+				89EBED83293495FC00053BDA /* PersonatellApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89EBED8B293495FF00053BDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89EBED94293495FF00053BDA /* PersonatellTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89EBED95293495FF00053BDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89EBEDA0293495FF00053BDA /* PersonatellUITestsLaunchTests.swift in Sources */,
+				89EBED9E293495FF00053BDA /* PersonatellUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		89EBED91293495FF00053BDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89EBED7E293495FC00053BDA /* Personatell */;
+			targetProxy = 89EBED90293495FF00053BDA /* PBXContainerItemProxy */;
+		};
+		89EBED9B293495FF00053BDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89EBED7E293495FC00053BDA /* Personatell */;
+			targetProxy = 89EBED9A293495FF00053BDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		89EBEDA1293495FF00053BDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		89EBEDA2293495FF00053BDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		89EBEDA4293495FF00053BDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Personatell/Preview Content\"";
+				DEVELOPMENT_TEAM = HSX5VD99YZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcd.Personatell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		89EBEDA5293495FF00053BDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Personatell/Preview Content\"";
+				DEVELOPMENT_TEAM = HSX5VD99YZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcd.Personatell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		89EBEDA7293495FF00053BDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HSX5VD99YZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcd.PersonatellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Personatell.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Personatell";
+			};
+			name = Debug;
+		};
+		89EBEDA8293495FF00053BDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HSX5VD99YZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcd.PersonatellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Personatell.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Personatell";
+			};
+			name = Release;
+		};
+		89EBEDAA293495FF00053BDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HSX5VD99YZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcd.PersonatellUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Personatell;
+			};
+			name = Debug;
+		};
+		89EBEDAB293495FF00053BDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HSX5VD99YZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcd.PersonatellUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Personatell;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89EBED7A293495FC00053BDA /* Build configuration list for PBXProject "Personatell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89EBEDA1293495FF00053BDA /* Debug */,
+				89EBEDA2293495FF00053BDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89EBEDA3293495FF00053BDA /* Build configuration list for PBXNativeTarget "Personatell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89EBEDA4293495FF00053BDA /* Debug */,
+				89EBEDA5293495FF00053BDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89EBEDA6293495FF00053BDA /* Build configuration list for PBXNativeTarget "PersonatellTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89EBEDA7293495FF00053BDA /* Debug */,
+				89EBEDA8293495FF00053BDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89EBEDA9293495FF00053BDA /* Build configuration list for PBXNativeTarget "PersonatellUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89EBEDAA293495FF00053BDA /* Debug */,
+				89EBEDAB293495FF00053BDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89EBED77293495FC00053BDA /* Project object */;
+}
