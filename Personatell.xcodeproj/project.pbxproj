@@ -15,6 +15,10 @@
 		89EBED9E293495FF00053BDA /* PersonatellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBED9D293495FF00053BDA /* PersonatellUITests.swift */; };
 		89EBEDA0293495FF00053BDA /* PersonatellUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBED9F293495FF00053BDA /* PersonatellUITestsLaunchTests.swift */; };
 		89EBEDAE2934969600053BDA /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBEDAD2934969600053BDA /* Question.swift */; };
+		89EBEDB429349A2400053BDA /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBEDB329349A2400053BDA /* LandingView.swift */; };
+		89EBEDB629349A2C00053BDA /* LandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBEDB529349A2C00053BDA /* LandingViewModel.swift */; };
+		89EBEDB82934C8F700053BDA /* QuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBEDB72934C8F700053BDA /* QuestionsView.swift */; };
+		89EBEDBA2934C8FF00053BDA /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBEDB92934C8FF00053BDA /* ResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,10 @@
 		89EBED9D293495FF00053BDA /* PersonatellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonatellUITests.swift; sourceTree = "<group>"; };
 		89EBED9F293495FF00053BDA /* PersonatellUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonatellUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		89EBEDAD2934969600053BDA /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		89EBEDB329349A2400053BDA /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		89EBEDB529349A2C00053BDA /* LandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewModel.swift; sourceTree = "<group>"; };
+		89EBEDB72934C8F700053BDA /* QuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsView.swift; sourceTree = "<group>"; };
+		89EBEDB92934C8FF00053BDA /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +160,8 @@
 		89EBEDB02934995400053BDA /* Landing */ = {
 			isa = PBXGroup;
 			children = (
+				89EBEDB329349A2400053BDA /* LandingView.swift */,
+				89EBEDB529349A2C00053BDA /* LandingViewModel.swift */,
 			);
 			path = Landing;
 			sourceTree = "<group>";
@@ -159,6 +169,7 @@
 		89EBEDB12934996000053BDA /* Questions */ = {
 			isa = PBXGroup;
 			children = (
+				89EBEDB72934C8F700053BDA /* QuestionsView.swift */,
 			);
 			path = Questions;
 			sourceTree = "<group>";
@@ -166,6 +177,7 @@
 		89EBEDB22934996A00053BDA /* Result */ = {
 			isa = PBXGroup;
 			children = (
+				89EBEDB92934C8FF00053BDA /* ResultView.swift */,
 			);
 			path = Result;
 			sourceTree = "<group>";
@@ -300,8 +312,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89EBEDB429349A2400053BDA /* LandingView.swift in Sources */,
+				89EBEDB629349A2C00053BDA /* LandingViewModel.swift in Sources */,
+				89EBEDB82934C8F700053BDA /* QuestionsView.swift in Sources */,
 				89EBEDAE2934969600053BDA /* Question.swift in Sources */,
 				89EBED85293495FC00053BDA /* ContentView.swift in Sources */,
+				89EBEDBA2934C8FF00053BDA /* ResultView.swift in Sources */,
 				89EBED83293495FC00053BDA /* PersonatellApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
