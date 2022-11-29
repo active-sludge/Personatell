@@ -19,6 +19,7 @@
 		89EBEDB82934C8F700053BDA /* QuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBEDB72934C8F700053BDA /* QuestionsView.swift */; };
 		89EBEDBA2934C8FF00053BDA /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBEDB92934C8FF00053BDA /* ResultView.swift */; };
 		89FDD8A02935403B004D9B01 /* QuestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FDD89F2935403B004D9B01 /* QuestionsViewModel.swift */; };
+		89FDD8A52936082D004D9B01 /* QuestionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FDD8A42936082D004D9B01 /* QuestionsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		89EBEDB72934C8F700053BDA /* QuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsView.swift; sourceTree = "<group>"; };
 		89EBEDB92934C8FF00053BDA /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		89FDD89F2935403B004D9B01 /* QuestionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewModel.swift; sourceTree = "<group>"; };
+		89FDD8A42936082D004D9B01 /* QuestionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		89EBED81293495FC00053BDA /* Personatell */ = {
 			isa = PBXGroup;
 			children = (
+				89FDD8A32936081A004D9B01 /* Network */,
 				89EBEDAF2934994E00053BDA /* Scenes */,
 				89EBEDAC2934968C00053BDA /* Model */,
 				89EBED82293495FC00053BDA /* PersonatellApp.swift */,
@@ -180,6 +183,14 @@
 				89EBEDB92934C8FF00053BDA /* ResultView.swift */,
 			);
 			path = Result;
+			sourceTree = "<group>";
+		};
+		89FDD8A32936081A004D9B01 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				89FDD8A42936082D004D9B01 /* QuestionsService.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,6 +328,7 @@
 				89EBEDB82934C8F700053BDA /* QuestionsView.swift in Sources */,
 				89EBEDAE2934969600053BDA /* Question.swift in Sources */,
 				89EBED85293495FC00053BDA /* ContentView.swift in Sources */,
+				89FDD8A52936082D004D9B01 /* QuestionsService.swift in Sources */,
 				89EBEDBA2934C8FF00053BDA /* ResultView.swift in Sources */,
 				89EBED83293495FC00053BDA /* PersonatellApp.swift in Sources */,
 			);

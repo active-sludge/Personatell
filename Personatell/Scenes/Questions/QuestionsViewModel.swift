@@ -6,16 +6,21 @@
 //
 
 import Foundation
+import Combine
 
 final class QuestionsViewModel: ObservableObject {
     @Published var questions: [Question] = []
     @Published var score: Int = 0
     @Published var currentIndex: Int = 0
+    @Published var isLoadingQuestion: Bool = false
     
     private let highlyExtrovertRange = (-10)...(-6)
     private let aLittleExtrovertRange = (-5)...(-1)
     private let aLittleIntrovertRange = 1...5
     private let highlyIntrovertRange = 6...10
+    
+    private let service = QuestionsService()
+    private var subscriptions = Set<AnyCancellable>()
     
     var currentQuestion: Question {
         questions[currentIndex]
@@ -41,6 +46,12 @@ final class QuestionsViewModel: ObservableObject {
     }
     
     func fetchQuestions() {
-        questions = Question.mockQuestions()
+        isLoadingQuestion = true
+        service.fetchQuestions()
+            .sink { [weak self] questions in
+                self?.isLoadingQuestion = false
+                self?.questions = questions
+            }
+            .store(in: &subscriptions)
     }
 }
