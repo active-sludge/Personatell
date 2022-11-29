@@ -26,7 +26,7 @@ struct QuestionsView: View {
                 ForEach(viewModel.currentQuestion.answers, id: \.title) { answer in
                     Button {
                         viewModel.currentIndex += 1
-                        viewModel.score += 2
+                        viewModel.score += answer.point
                         print(viewModel.currentIndex,
                               viewModel.score)
                     } label: {
