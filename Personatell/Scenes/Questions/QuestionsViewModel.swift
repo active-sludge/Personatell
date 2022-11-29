@@ -8,7 +8,15 @@
 import Foundation
 import Combine
 
-final class QuestionsViewModel: ObservableObject {
+protocol QuestionsViewModeling {
+    var questions: [Question] { get set }
+    var score: Int { get set }
+    var currentIndex: Int  { get set }
+    var isLoadingQuestion: Bool  { get set }
+    func fetchQuestions()
+}
+
+final class QuestionsViewModel: ObservableObject, QuestionsViewModeling {
     @Published var questions: [Question] = []
     @Published var score: Int = 0
     @Published var currentIndex: Int = 0
@@ -19,7 +27,7 @@ final class QuestionsViewModel: ObservableObject {
     private let aLittleIntrovertRange = 1...5
     private let highlyIntrovertRange = 6...10
     
-    private let service = QuestionsService()
+    private let service: QuestionServicable
     private var subscriptions = Set<AnyCancellable>()
     
     var currentQuestion: Question {
@@ -41,7 +49,8 @@ final class QuestionsViewModel: ObservableObject {
         }
     }
     
-    init() {
+    init(service: QuestionServicable = QuestionsService()) {
+        self.service = service
         fetchQuestions()
     }
     

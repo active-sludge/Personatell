@@ -8,8 +8,11 @@
 import Foundation
 import Combine
 
-final class QuestionsService {
-    
+protocol QuestionServicable {
+    func fetchQuestions() -> AnyPublisher<[Question], Never>
+}
+
+final class QuestionsService: QuestionServicable {
     func fetchQuestions() -> AnyPublisher<[Question], Never> {
         return CurrentValueSubject<[Question], Never>(Question.mockQuestions())
             .delay(for: 1.5, scheduler: RunLoop.main)

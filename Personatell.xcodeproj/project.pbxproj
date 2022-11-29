@@ -20,6 +20,8 @@
 		89EBEDBA2934C8FF00053BDA /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBEDB92934C8FF00053BDA /* ResultView.swift */; };
 		89FDD8A02935403B004D9B01 /* QuestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FDD89F2935403B004D9B01 /* QuestionsViewModel.swift */; };
 		89FDD8A52936082D004D9B01 /* QuestionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FDD8A42936082D004D9B01 /* QuestionsService.swift */; };
+		89FDD8A9293641F3004D9B01 /* QuestionsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FDD8A8293641F3004D9B01 /* QuestionsViewModelTests.swift */; };
+		89FDD8AB293642B1004D9B01 /* MockQuestionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FDD8AA293642B1004D9B01 /* MockQuestionsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		89EBEDB92934C8FF00053BDA /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		89FDD89F2935403B004D9B01 /* QuestionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewModel.swift; sourceTree = "<group>"; };
 		89FDD8A42936082D004D9B01 /* QuestionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsService.swift; sourceTree = "<group>"; };
+		89FDD8A8293641F3004D9B01 /* QuestionsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewModelTests.swift; sourceTree = "<group>"; };
+		89FDD8AA293642B1004D9B01 /* MockQuestionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockQuestionsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				89EBED93293495FF00053BDA /* PersonatellTests.swift */,
+				89FDD8A8293641F3004D9B01 /* QuestionsViewModelTests.swift */,
+				89FDD8AA293642B1004D9B01 /* MockQuestionsService.swift */,
 			);
 			path = PersonatellTests;
 			sourceTree = "<group>";
@@ -338,7 +344,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89FDD8A9293641F3004D9B01 /* QuestionsViewModelTests.swift in Sources */,
 				89EBED94293495FF00053BDA /* PersonatellTests.swift in Sources */,
+				89FDD8AB293642B1004D9B01 /* MockQuestionsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
