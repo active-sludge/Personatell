@@ -8,29 +8,36 @@
 import SwiftUI
 
 struct QuestionsView: View {
-    @EnvironmentObject var questionsViewModel: QuestionsViewModel
+    @EnvironmentObject var viewModel: QuestionsViewModel
     
+    @ViewBuilder
     var body: some View {
-        Spacer()
-        Text("Question")
-            .font(.system(size: 64))
-            .allowsTightening(true)
-            .foregroundColor(.red)
-            .lineLimit(5)
-            .multilineTextAlignment(.center)
-        Spacer()
-        VStack(spacing: 25) {
-            ForEach(0 ..< 4) { index in
-                Button {
-                    questionsViewModel.currentIndex += 1
-                    questionsViewModel.score += 2
-                    print(questionsViewModel.currentIndex, questionsViewModel.score)
-                } label: {
-                    Text("Answer")
-                        .font(.largeTitle)
+        if viewModel.currentIndex < viewModel.questions.count {
+            Spacer()
+            Text(viewModel.currentQuestion.title)
+                .font(.system(size: 16))
+                .allowsTightening(true)
+                .foregroundColor(.red)
+                .lineLimit(5)
+                .multilineTextAlignment(.center)
+                .padding()
+            Spacer()
+            VStack(spacing: 25) {
+                ForEach(viewModel.currentQuestion.answers, id: \.title) { answer in
+                    Button {
+                        viewModel.currentIndex += 1
+                        viewModel.score += 2
+                        print(viewModel.currentIndex,
+                              viewModel.score)
+                    } label: {
+                        Text(answer.title)
+                            .font(.caption)
+                    }
+                    Divider()
                 }
-                Divider()
             }
+        } else {
+            ResultView()
         }
     }
 }
@@ -38,5 +45,6 @@ struct QuestionsView: View {
 struct QuestionsView_Previews: PreviewProvider {
     static var previews: some View {
         QuestionsView()
+            .environmentObject(QuestionsViewModel())
     }
 }

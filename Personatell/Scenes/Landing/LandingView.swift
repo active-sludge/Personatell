@@ -9,9 +9,6 @@ import SwiftUI
 
 struct LandingView: View {
     @State var shouldShowTest: Bool = false
-    private var viewModel = LandingViewModel()
-    
-    private let iconWidth = 150.0
     
     var body: some View {
         if shouldShowTest {
@@ -21,13 +18,11 @@ struct LandingView: View {
             VStack(spacing: 12.0) {
                 Spacer()
                 Image(systemName: "person.fill.questionmark")
-                    .resizable()
                     .imageScale(.small)
-                    .frame(width: iconWidth, height: iconWidth)
                     .foregroundColor(.purple)
-                Text(viewModel.title)
+                Text("Welcome to your personality test!")
                     .font(.headline)
-                Text(viewModel.subtitle)
+                Text("Find out whether you are an introvert or an extrovert.")
                     .font(.subheadline)
                 Spacer()
                 Button {
@@ -35,7 +30,7 @@ struct LandingView: View {
                 } label: {
                     HStack {
                         Image(systemName: "play")
-                        Text(verbatim: viewModel.buttonTitle)
+                        Text(verbatim: "Start")
                     }
                 }
             }

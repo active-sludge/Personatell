@@ -8,16 +8,23 @@
 import SwiftUI
 
 struct ResultView: View {
+    @EnvironmentObject var viewModel: QuestionsViewModel
+    
     var body: some View {
         VStack(spacing: 12.0) {
-            Image(systemName: "person.fill.questionmark")
+            Spacer()
+            Image(systemName: "person.fill.checkmark")
                 .imageScale(.large)
                 .foregroundColor(.purple)
-            
+            Text(viewModel.personalityResult)
+              .fontWeight(.bold)
+              .foregroundColor(.gray)
+            Spacer()
             Button {
-                
+                viewModel.currentIndex = 0
+                viewModel.score = 0
             } label: {
-                Text("To Landing")
+                Text("Retry")
             }
         }
         .padding()
