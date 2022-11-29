@@ -33,8 +33,6 @@ struct QuestionsView: View {
                             Button {
                                 viewModel.currentIndex += 1
                                 viewModel.score += answer.point
-                                print(viewModel.currentIndex,
-                                      viewModel.score)
                             } label: {
                                 Text(answer.title)
                                     .font(.caption)
